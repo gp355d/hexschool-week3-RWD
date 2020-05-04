@@ -63,6 +63,10 @@ h6 {
     margin-right: 24px;
 }
 
+.h-100 {
+    height: 100%;
+}
+
 .header {
     background: $primary-color;
     padding: 0 88px;
@@ -87,5 +91,27 @@ h6 {
             font-size: 20px;
             line-height: 30px;
         }
+    }
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center center;
+    background-size: cover;
+    height: 840px;
+}
+
+.content {
+    justify-content: flex-end;
+}
+
+.slogn {
+    color: $primary-text;
+    & h3 {
+        font-size: 36px;
+        text-align: right;
+    }
+    & h2 {
+        font-size: 64px;
     }
 }
