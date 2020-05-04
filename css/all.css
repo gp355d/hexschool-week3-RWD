@@ -192,6 +192,10 @@ h6 {
   margin-bottom: 16px;
 }
 
+.mb-24 {
+  margin-bottom: 24px;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -316,5 +320,73 @@ h6 {
 
 .text-outer span {
   color: #707070;
+}
+
+.footer {
+  background-color: #AA0601;
+  padding: 48px 0px 39px 0px;
+  color: #FFFFFF;
+}
+
+.link {
+  margin-bottom: 38px;
+}
+
+.website-link {
+  width: 368px;
+}
+
+.website-link li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.social-link {
+  width: 208px;
+}
+
+.countas-way-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+
+.countas-way-list li p {
+  font-size: 36px;
+}
+
+.countas-way-list img {
+  width: 36px;
+  height: 36px;
+  margin-right: 23px;
+}
+
+.countas-way-list li:nth-child(2) img {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+
+.copyright ul {
+  width: 188px;
+}
+
+.copyright ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.copyright a img {
+  width: 80px;
+  height: 48.57px;
+}
+
+.copyright-outer a {
+  margin-right: 38px;
 }
 /*# sourceMappingURL=all.css.map */
