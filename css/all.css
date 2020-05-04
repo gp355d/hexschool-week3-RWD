@@ -322,6 +322,59 @@ h6 {
   color: #707070;
 }
 
+.countas {
+  padding: 64px 0px 92px 0px;
+  background-color: #AA06010D;
+}
+
+.countas-outer {
+  width: 792px;
+  margin: 0 auto;
+}
+
+.countas h4 {
+  font-size: 48px;
+}
+
+.countas p {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.inputdata-area input[type="text"],
+.inputdata-area textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #000000;
+  background: #ffffff00;
+}
+
+.inputdata-area label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.checkbox-lit {
+  margin-bottom: 42px;
+}
+
+.inputdata-area input[type="checkbox"] {
+  width: 48px;
+  height: 48px;
+}
+
+.btnarea input[type="submit"] {
+  width: 180px;
+  color: #FFFFFF;
+  background-color: #AA0601;
+  padding: 16px 0px;
+  border: 0;
+  font-size: 16px;
+}
+
 .footer {
   background-color: #AA0601;
   padding: 48px 0px 39px 0px;
