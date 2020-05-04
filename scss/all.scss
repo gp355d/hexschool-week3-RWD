@@ -63,6 +63,10 @@ h6 {
     margin-right: 24px;
 }
 
+.mb-4 {
+    margin-bottom: 4px;
+}
+
 .h-100 {
     height: 100%;
 }
@@ -89,7 +93,6 @@ h6 {
             color: $text-color;
             text-decoration: none;
             font-size: 20px;
-            line-height: 30px;
         }
     }
 }
@@ -113,5 +116,36 @@ h6 {
     }
     & h2 {
         font-size: 64px;
+    }
+}
+
+.intro {
+    color: $primary-text;
+    padding: 64px 0px 80px 0px;
+    background-color: $primary-light;
+    & h4 {
+        font-size: 48px;
+        margin-bottom: 60px;
+        font-weight: 600;
+    }
+}
+
+.feature {
+    & li {
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+        p {
+            color: $text-default-color;
+            font-size: 16px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 0px auto 40px auto;
+        }
+        width: 282px;
+        padding: 0 37px;
     }
 }
