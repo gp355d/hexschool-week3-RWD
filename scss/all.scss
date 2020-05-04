@@ -1,0 +1,91 @@
+@import "reset";
+@import "variable";
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-12 {
+    margin-right: 12px;
+}
+
+.mr-24 {
+    margin-right: 24px;
+}
+
+.header {
+    background: $primary-color;
+    padding: 0 88px;
+    & h1 a {
+        display: block;
+        width: 80px;
+        height: 48.57px;
+        background-image: url(../images/logo.png);
+        text-indent: 101%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.menu {
+    width: 512px;
+    line-height: 108px;
+    & li {
+        a {
+            color: $text-color;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
