@@ -188,6 +188,10 @@ h6 {
   margin-bottom: 4px;
 }
 
+.mb-16 {
+  margin-bottom: 16px;
+}
+
 .h-100 {
   height: 100%;
 }
@@ -275,5 +279,42 @@ h6 {
   width: 100px;
   height: 100px;
   margin: 0px auto 40px auto;
+}
+
+.customer-recommender {
+  margin-top: -308px;
+  padding-bottom: 80px;
+}
+
+.customer-recommender h3 {
+  color: #FFFFFF;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.customer-list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.customer-list li {
+  margin: 0px 12px;
+}
+
+.customer-list-area {
+  border: 1px solid #DEE2E6;
+  padding: 16px;
+}
+
+.text-outer {
+  width: 250px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #212529;
+}
+
+.text-outer span {
+  color: #707070;
 }
 /*# sourceMappingURL=all.css.map */
