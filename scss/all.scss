@@ -217,6 +217,112 @@ h6 {
     opacity: 1;
 }
 
+.joint {
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    padding: 64px 0px 479px 0px;
+}
+
+.joint h2 {
+    color: $text-color;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.bg-size-contain {
+    background-size: contain;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.joint-photo-list li:first-child {
+    width: 573px;
+    height: 840px;
+    background-image: url(../images/product-4.png);
+    margin-right: 8px;
+}
+
+.joint-photo-list li:nth-child(2) {
+    width: 958px;
+    height: 454px;
+    background-image: url(../images/product-5.png);
+}
+
+.womon-list img:nth-child(1) {
+    margin-bottom: 8px;
+}
+
+.more {
+    text-align: right;
+    justify-content: flex-end;
+    padding-right: 84px;
+}
+
+.more-block {
+    display: block;
+    width: 259px;
+    height: 167px;
+    background-image: url(../images/more.png);
+    background-size: cover;
+    position: relative;
+}
+
+.more img {
+    width: 48px;
+    height: 48px;
+}
+
+.more-link {
+    display: flex;
+    align-items: center;
+    width: 315px;
+    height: 105px;
+    background-color: #fff;
+    color: #AA0601;
+    font-size: 72px;
+    line-height: 108px;
+    text-transform: uppercase;
+    margin-right: 17px;
+    position: absolute;
+    top: 32px;
+    left: 59px;
+    /* content: url(../images/icon-arrow.svg); */
+}
+
+.customized {
+    display: flex;
+    justify-content: space-between;
+}
+
+.customized li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/product-8.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #AA0601;
+    font-weight: bold;
+    width: 585px;
+    height: 592px;
+    opacity: 0.5;
+}
+
+.customized li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/product-9.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 585px;
+    height: 592px;
+}
+
 .customer-recommender {
     margin-top: -308px;
     padding-bottom: 80px;
