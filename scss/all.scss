@@ -91,6 +91,29 @@ h6 {
         overflow: hidden;
         white-space: nowrap;
     }
+    .hamber-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        padding: 0 48px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        justify-content: center;
+        padding: 10px 16px;
+        position: relative;
+        .hamber-menu {
+            display: block;
+            position: absolute;
+            left: 31px;
+            color: $text-color;
+        }
+    }
 }
 
 .menu {
@@ -102,6 +125,31 @@ h6 {
             text-decoration: none;
             font-size: 20px;
         }
+    }
+}
+
+@media(max-width: 767px) {
+    .menu {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        text-align: center;
+        flex-direction: column;
+        overflow: hidden;
+        z-index: 1;
+        transition: all 0.8s;
+        max-height: 800px;
+        background: $primary-color;
+        transition: all 0.8s;
+        li {
+            border-top: 1px solid $text-color;
+            padding: 16px 0;
+        }
+    }
+    .menu.active {
+        max-height: 0px;
     }
 }
 
@@ -445,7 +493,7 @@ h6 {
     flex-wrap: wrap;
     & li {
         width: 282px;
-        height: 256px;
+        // height: 256px;
         // margin: 0px 12px;
     }
 }

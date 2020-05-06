@@ -215,6 +215,32 @@ h6 {
   white-space: nowrap;
 }
 
+.header .hamber-menu {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 0 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 16px;
+    position: relative;
+  }
+  .header .hamber-menu {
+    display: block;
+    position: absolute;
+    left: 31px;
+    color: #FFFFFF;
+  }
+}
+
 .menu {
   width: 512px;
   line-height: 108px;
@@ -224,6 +250,35 @@ h6 {
   color: #FFFFFF;
   text-decoration: none;
   font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    max-height: 800px;
+    background: #AA0601;
+    transition: all 0.8s;
+  }
+  .menu li {
+    border-top: 1px solid #FFFFFF;
+    padding: 16px 0;
+  }
+  .menu.active {
+    max-height: 0px;
+  }
 }
 
 .banner {
@@ -587,7 +642,6 @@ h6 {
 
 .customer-list li {
   width: 282px;
-  height: 256px;
 }
 
 .customer-list-area {
