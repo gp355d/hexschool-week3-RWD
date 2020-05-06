@@ -160,6 +160,35 @@ h6 {
     height: 840px;
 }
 
+@media (max-width: 992px) {
+    .banner {
+        background-image: url(../images/banner-sm.png);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner {
+        background-image: url(../images/banner-sm.png);
+        background-position: center center;
+        background-size: cover;
+        height: 394px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 850px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 655px;
+    }
+}
+
 .content {
     justify-content: flex-end;
 }
@@ -172,6 +201,17 @@ h6 {
     }
     & h2 {
         font-size: 64px;
+    }
+}
+
+@media (max-width: 767px) {
+    .slogn {
+        & h3 {
+            font-size: 1rem;
+        }
+        & h2 {
+            font-size: 2rem;
+        }
     }
 }
 
