@@ -170,6 +170,7 @@ h6 {
 .classic-list {
     li {
         display: flex;
+        flex-wrap: wrap;
         margin-bottom: 32px;
         h3 {
             font-size: 48px;
@@ -237,22 +238,116 @@ h6 {
     background-repeat: no-repeat;
 }
 
-.joint-photo-list li:first-child {
-    width: 573px;
-    height: 840px;
-    background-image: url(../images/product-4.png);
+.flex-column {
+    flex-direction: column;
+}
+
+
+/* others */
+
+.others-list li:first-child {
+    margin-bottom: 3.75rem;
+}
+
+.others-list-item-brand {
+    position: relative;
+}
+
+.others-list-item-brand::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.others-list span {
+    font-size: 72px;
+    color: #AA0601;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    white-space: nowrap;
+}
+
+.others-list-item-brand:first-of-type {
+    margin-right: 1.875rem;
+}
+
+.more {
+    align-items: flex-end;
+}
+
+.more-img {
+    position: relative;
+    height: 100%;
+    display: flex;
+    max-width: 30%;
+    transition: all .65s .3s;
+    transform: translateX(0px);
+    margin-right: 85px;
+}
+
+.more-img::after {
+    content: "";
+    position: absolute;
+    background: white;
+    top: 8%;
+    bottom: 8%;
+    left: 10%;
+    right: -85px;
+}
+
+.more-img span {
+    padding: 5px 0 5px 32px;
+}
+
+.more span::before {
+    content: 'MORE';
+    position: absolute;
+    transition: all .65s .3s;
+    transform: translateY(0px);
+}
+
+.more span:hover::before {
+    transform: translateY(-85px);
+    opacity: .7;
+}
+
+.more span::after {
+    content: 'MORE';
+    position: absolute;
+    transition: all .65s .3s;
+    transform: translateY(0px);
+}
+
+.more span:hover::after {
+    transform: translateY(-145px);
+    opacity: .4;
+}
+
+.more-img:hover img:last-child {
+    transform: translateX(15px);
+}
+
+.mr-1 {
     margin-right: 8px;
 }
 
-.joint-photo-list li:nth-child(2) {
-    width: 958px;
-    height: 454px;
-    background-image: url(../images/product-5.png);
+.mb-1 {
+    margin-bottom: 0.5rem;
 }
 
-.womon-list img:nth-child(1) {
-    margin-bottom: 8px;
-}
+// .mb-1 {
+//     margin-bottom: 0.125rem;
+// }
+
+/******
 
 .more {
     text-align: right;
@@ -288,8 +383,8 @@ h6 {
     position: absolute;
     top: 32px;
     left: 59px;
-    /* content: url(../images/icon-arrow.svg); */
-}
+    content: url(../images/icon-arrow.svg); 
+}*/
 
 .customized {
     display: flex;
@@ -297,32 +392,43 @@ h6 {
 }
 
 .customized li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/product-8.png);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #AA0601;
-    font-weight: bold;
-    width: 585px;
-    height: 592px;
-    opacity: 0.5;
+    position: relative;
+    p {
+        font-size: 72px;
+        color: $primary-color;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-weight: bold;
+        z-index: 1;
+    }
+    img {
+        width: 585px;
+    }
 }
 
-.customized li:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../images/product-9.png);
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    width: 585px;
-    height: 592px;
+.bg-opacity-cover {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
+// .customized li:last-child {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-image: url(../images/product-9.png);
+//     background-size: contain;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     width: 585px;
+//     height: 592px;
+// }
 .customer-recommender {
     margin-top: -308px;
     padding-bottom: 80px;
@@ -335,9 +441,12 @@ h6 {
 }
 
 .customer-list {
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     & li {
-        margin: 0px 12px;
+        width: 282px;
+        height: 256px;
+        // margin: 0px 12px;
     }
 }
 
@@ -362,7 +471,7 @@ h6 {
 }
 
 .countas-outer {
-    width: 792px;
+    max-width: 792px;
     margin: 0 auto;
 }
 
