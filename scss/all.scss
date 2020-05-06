@@ -336,13 +336,22 @@
                     }
                 }
                 
+                @media (max-width:992px) {
+                    .classic-list.container {
+                        max-width: 672px;
+                    }
+                    .classic-list li img {
+                        width: 66%;
+                    }
+                    .classic-list li:nth-child(2) {
+                        flex-direction: row-reverse;
+                    }
+                }
+                
                 .classic-list li:last-child {
                     margin-bottom: 0;
                 }
                 
-                // .classic-list li:nth-child(2) {
-                //     flex-direction: row-reverse;
-                // }
                 .classic-list li:nth-child(2) h3 {
                     margin-right: 24px;
                 }
@@ -620,19 +629,71 @@
                     background-color: $primary-light;
                 }
                 
+                @media (max-width:992px) {
+                    .container {
+                        max-width: 672px;
+                    }
+                }
+                
+                @media (max-width:767px) {
+                    .container {
+                        max-width: 352px;
+                    }
+                }
+                
+                @media(max-width: 992px) {
+                    .countas {
+                        padding: 40px 132px 56px 132px;
+                    }
+                }
+                
+                @media(max-width: 767px) {
+                    .countas {
+                        padding: 24px 24px 56px 24px;
+                    }
+                }
+                
                 .countas-outer {
                     max-width: 792px;
                     margin: 0 auto;
                 }
                 
+                // @media(max-width: 992px) {
+                //     .countas-outer {
+                //         max-width: 100%;
+                //     }
+                // }
+                // @media(max-width: 767px) {
+                //     .countas-outer {
+                //         max-width: 100%;
+                //     }
+                // }
                 .countas h4 {
                     font-size: 48px;
+                }
+                
+                @media(max-width: 992px) {
+                    .countas h4 {
+                        font-size: 2rem;
+                    }
+                }
+                
+                @media(max-width: 767px) {
+                    .countas h4 {
+                        font-size: 20px;
+                    }
                 }
                 
                 .countas p {
                     text-align: left;
                     font-size: 20px;
                     margin-bottom: 20px;
+                }
+                
+                @media(max-width: 767px) {
+                    .countas p {
+                        font-size: 1rem;
+                    }
                 }
                 
                 .inputdata-area input[type="text"],
@@ -652,6 +713,12 @@
                 
                 .checkbox-lit {
                     margin-bottom: 42px;
+                }
+                
+                @media (max-width:767px) {
+                    .checkbox-lit {
+                        font-size: 14px;
+                    }
                 }
                 
                 .inputdata-area input[type="checkbox"] {
