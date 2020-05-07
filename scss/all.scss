@@ -414,6 +414,12 @@ h6 {
     margin-bottom: 60px;
 }
 
+@media (max-width:992px) {
+    .joint h2 {
+        font-size: 24px;
+    }
+}
+
 .bg-size-contain {
     background-size: contain;
 }
@@ -459,6 +465,18 @@ h6 {
     white-space: nowrap;
 }
 
+@media (max-width:992px) {
+    .others-list span {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:767px) {
+    .others-list span {
+        font-size: 26px;
+    }
+}
+
 .others-list-item-brand:first-of-type {
     margin-right: 1.875rem;
 }
@@ -489,6 +507,12 @@ h6 {
 
 .more-img span {
     padding: 5px 0 5px 32px;
+}
+
+@media (max-width:767px) {
+    .more-img span img {
+        width: 18px;
+    }
 }
 
 .more span::before {
@@ -575,6 +599,12 @@ content: url(../images/icon-arrow.svg);
     justify-content: space-between;
 }
 
+@media (max-width:767px) {
+    .customized {
+        justify-content: center;
+    }
+}
+
 .customized li {
     position: relative;
     p {
@@ -590,6 +620,24 @@ content: url(../images/icon-arrow.svg);
     }
     img {
         width: 585px;
+    }
+}
+
+@media (max-width:767px) {
+    .customized li {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:992px) {
+    .customized {
+        flex-wrap: wrap;
+    }
+    .customized li p {
+        font-size: 32px;
+    }
+    .customized li img {
+        width: 322px;
     }
 }
 
