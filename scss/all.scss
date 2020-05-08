@@ -332,6 +332,7 @@ h6 {
         & li {
             width: 100%;
             margin-bottom: 1.75rem;
+            padding: 0 12px;
         }
     }
     .feature li:nth-child(1) {
@@ -377,6 +378,10 @@ h6 {
             margin-left: 24px;
         }
     }
+}
+
+.classic-list li img:nth-child(1) {
+    width: 60%;
 }
 
 .classic-list li:nth-child(2) h3 {
@@ -611,12 +616,13 @@ h6 {
         z-index: 1;
     }
     img {
-        width: 585px;
+        // width: 585px;
+        width: 98%;
     }
 }
 
 .bg-opacity-cover {
-    width: 100%;
+    width: 98%;
     height: 100%;
     background: rgba(255, 255, 255, .5);
     position: absolute;
@@ -665,6 +671,7 @@ h6 {
     .customized li {
         margin-bottom: 20px;
     }
+    //變換圖片顏色卡住了...
 }
 
 
@@ -701,7 +708,8 @@ h6 {
 }
 
 .text-outer {
-    width: 250px;
+    // width: 250px;
+    width: 100%;
     margin: 0 auto;
     font-size: 16px;
     color: #212529;
@@ -801,6 +809,10 @@ h6 {
     padding: 16px 0px;
     border: 0;
     font-size: 16px;
+}
+
+.btnarea input[type="submit"]:hover {
+    background-color: $primary-text;
 }
 
 @media (max-width:992px) {
@@ -963,7 +975,6 @@ hr {
 
 .copyright {
     & ul {
-        width: 188px;
         & li a {
             font-size: 14px;
             text-decoration: none;
@@ -976,22 +987,35 @@ hr {
     }
 }
 
-.copyright-outer a {
+.copyright a {
     margin-right: 38px;
 }
 
+.copyright p {
+    margin-right: auto;
+}
+
 @media (max-width:992px) {
-    .copyright-outer a {
-        display: none;
+    .copyright {
+        .logo {
+            display: none;
+        }
     }
 }
 
 @media (max-width:767px) {
-    .copyright ul {
-        display: block;
+    .copyright {
+        flex-direction: column;
     }
-    .copyright-outer a {
+    .copyright ul {
+        // display: block;
+        //這裡卡住了....
+    }
+    .copyright .logo {
         display: block;
+        align-self: flex-end;
+        justify-self: end;
+        order: 1;
     }
     .copyright a img {
         width: 46px;
